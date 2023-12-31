@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20231231 16:31:34.183" rpa="false" schemaversion="4">
+<suite id="s1" name="Dec31" source="C:\selenium automation\testcase\dec31.robot">
+<test id="s1-t1" name="Task" line="12">
+<kw name="Create List" library="BuiltIn">
+<var>@{LIS}</var>
+<arg>U1</arg>
+<arg>U2</arg>
+<arg>U3</arg>
+<arg>U4</arg>
+<arg>U5</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20231231 16:31:34.376" level="INFO">@{LIS} = [ U1 | U2 | U3 | U4 | U5 ]</msg>
+<status status="PASS" starttime="20231231 16:31:34.376" endtime="20231231 16:31:34.376"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${RES}</var>
+<arg>name=facepalm</arg>
+<arg>count=1034</arg>
+<arg>users=@{LIS}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20231231 16:31:34.376" level="INFO">${RES} = {'name': 'facepalm', 'count': '1034', 'users': ['U1', 'U2', 'U3', 'U4', 'U5']}</msg>
+<status status="PASS" starttime="20231231 16:31:34.376" endtime="20231231 16:31:34.376"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RES}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231231 16:31:34.376" level="INFO">{'name': 'facepalm', 'count': '1034', 'users': ['U1', 'U2', 'U3', 'U4', 'U5']}</msg>
+<status status="PASS" starttime="20231231 16:31:34.376" endtime="20231231 16:31:34.376"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{LIS2}</var>
+<arg>U1</arg>
+<arg>U2</arg>
+<arg>U3</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20231231 16:31:34.376" level="INFO">@{LIS2} = [ U1 | U2 | U3 ]</msg>
+<status status="PASS" starttime="20231231 16:31:34.376" endtime="20231231 16:31:34.376"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${RES2}</var>
+<arg>name=astonished</arg>
+<arg>count=3</arg>
+<arg>users=@{LIS2}</arg>
+<arg>reaction=${RES}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20231231 16:31:34.376" level="INFO">${RES2} = {'name': 'astonished', 'count': '3', 'users': ['U1', 'U2', 'U3'], 'reaction': {'name': 'facepalm', 'count': '1034', 'users': ['U1', 'U2', 'U3', 'U4', 'U5']}}</msg>
+<status status="PASS" starttime="20231231 16:31:34.376" endtime="20231231 16:31:34.376"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RES2}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231231 16:31:34.376" level="INFO">{'name': 'astonished', 'count': '3', 'users': ['U1', 'U2', 'U3'], 'reaction': {'name': 'facepalm', 'count': '1034', 'users': ['U1', 'U2', 'U3', 'U4', 'U5']}}</msg>
+<status status="PASS" starttime="20231231 16:31:34.376" endtime="20231231 16:31:34.376"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{LIS3}</var>
+<arg>C0224BE7T</arg>
+<arg>....</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20231231 16:31:34.376" level="INFO">@{LIS3} = [ C0224BE7T | .... ]</msg>
+<status status="PASS" starttime="20231231 16:31:34.376" endtime="20231231 16:31:34.376"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${RES3}</var>
+<arg>type=message</arg>
+<arg>channel=C2147483705</arg>
+<arg>user=U2147483679</arg>
+<arg>text=Hello world</arg>
+<arg>ts=1355517523.00005</arg>
+<arg>is_starred=True</arg>
+<arg>pinned_to=@{LIS3}</arg>
+<arg>reactions=${RES2}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20231231 16:31:34.376" level="INFO">${RES3} = {'type': 'message', 'channel': 'C2147483705', 'user': 'U2147483679', 'text': 'Hello world', 'ts': '1355517523.00005', 'is_starred': 'True', 'pinned_to': ['C0224BE7T', '....'], 'reactions': {'name': 'a...</msg>
+<status status="PASS" starttime="20231231 16:31:34.376" endtime="20231231 16:31:34.376"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${RES3}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231231 16:31:34.380" level="INFO">{'type': 'message', 'channel': 'C2147483705', 'user': 'U2147483679', 'text': 'Hello world', 'ts': '1355517523.00005', 'is_starred': 'True', 'pinned_to': ['C0224BE7T', '....'], 'reactions': {'name': 'astonished', 'count': '3', 'users': ['U1', 'U2', 'U3'], 'reaction': {'name': 'facepalm', 'count': '1034', 'users': ['U1', 'U2', 'U3', 'U4', 'U5']}}}</msg>
+<status status="PASS" starttime="20231231 16:31:34.380" endtime="20231231 16:31:34.380"/>
+</kw>
+<status status="PASS" starttime="20231231 16:31:34.376" endtime="20231231 16:31:34.380"/>
+</test>
+<status status="PASS" starttime="20231231 16:31:34.186" endtime="20231231 16:31:34.380"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Dec31">Dec31</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
