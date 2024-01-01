@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240101 17:14:14.094" rpa="false" schemaversion="4">
+<suite id="s1" name="Builtin" source="C:\Users\crazy\Automation training\testcase\builtin.robot">
+<test id="s1-t1" name="Create" line="12">
+<kw name="Create List" library="BuiltIn">
+<var>${LIST}</var>
+<arg>aa</arg>
+<arg>bb</arg>
+<arg>cc</arg>
+<arg>dd</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20240101 17:14:14.111" level="INFO">${LIST} = ['aa', 'bb', 'cc', 'dd']</msg>
+<status status="PASS" starttime="20240101 17:14:14.111" endtime="20240101 17:14:14.111"/>
+</kw>
+<status status="PASS" starttime="20240101 17:14:14.110" endtime="20240101 17:14:14.111"/>
+</test>
+<status status="PASS" starttime="20240101 17:14:14.096" endtime="20240101 17:14:14.112"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Builtin">Builtin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
