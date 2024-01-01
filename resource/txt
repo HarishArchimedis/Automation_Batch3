@@ -1,0 +1,50 @@
+# Page Should Contain Element    //ul[@class="oxd-main-menu"]/li/a 
+    # Element Should Be Visible    //span[text()="Admin"]/ancestor::a 
+    # Click Element    //span[text()="Admin"]/ancestor::a  
+    # Page Should Contain    User Management  
+    # Sleep    1
+    # Element Should Be Visible    //span[text()="PIM"]/ancestor::a
+    # Click Element    //span[text()="PIM"]/ancestor::a
+    # Page Should Contain    PIM
+    # Sleep    1
+    # Element Should Be Visible    //span[text()="Leave"]/ancestor::a  
+    # Click Element    //span[text()="Leave"]/ancestor::a 
+    # Page Should Contain    Leave 
+    # Sleep    1
+    # Element Should Be Visible    //span[text()="Time"]/ancestor::a 
+    # Click Element    //span[text()="Time"]/ancestor::a
+    # Page Should Contain    Select Employee
+    # Sleep    1
+    # Element Should Be Visible    //span[text()="Recruitment"]/ancestor::a
+    # Click Element    //span[text()="Recruitment"]/ancestor::a  
+    # Page Should Contain    Recruitment  
+    # Sleep    1
+    # Element Should Be Enabled    //span[text()="My Info"]/ancestor::a  
+    # Click Element    //span[text()="My Info"]/ancestor::a
+    # Page should contain    Employee Full Name
+    # Sleep    1
+    # Element Should Be Visible    //span[text()="Performance"]/ancestor::a 
+    # Click Element    //span[text()="Performance"]/ancestor::a
+    # Page should contain    Employee Reviews 
+    # Sleep    1
+    # # Element Should Be Visible    //span[text()="Dashboard"]/ancestor::a  
+    # Click Element    //span[text()="Dashboard"]/ancestor::a
+    # Page Should Contain    My Actions
+    # Click Element    //span[text()="Directory"]/ancestor::a  
+    # Page Should Contain    Directory
+    # # Click Element    //span[text()="Maintenance"]/ancestor::a
+    # # Page Should Contain    text   
+    # Click Element    //span[text()="Claim"]/ancestor::a
+    # Page Should Contain    Employee Claims
+    # Sleep    1
+    # Click Element    //span[text()="Buzz"]/ancestor::a 
+    # Page should contain    Buzz Newsfeed    
+    # Sleep    2
+    //div[@class="login_wrapper-inner"]
+    //div[@class="_8esj _95k9 _8esf _8opv _8f3m _8ilg _8icx _8op_ _95ka"]
+
+     #  Open Browser      https://www.google.com      Chrome     --incognito
+    # ${options}=    Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
+    # Call Method    ${options}    add_argument    incognito
+    # Assign Id To Element    //div[@class="login_wrapper-inner"]    id:logpage
+    robot --variable BROWSER:Chrome -e open_browser  tc001.robot
